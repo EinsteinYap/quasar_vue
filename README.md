@@ -1,6 +1,10 @@
-# Awesome Todo (awesome-todo-check)
+# Quask Vue Framework App
 
 A Quasar Framework app
+
+## please Use NVM change to v 12.20.0 for this app run correctly
+
+nvm use v12.20.0
 
 ## Install the dependencies
 

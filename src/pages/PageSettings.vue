@@ -108,10 +108,10 @@ export default {
   methods: {
     ...mapActions('settings', ['setShow12HourTimeFormat', 'setShowTasksInOneList']),
     visitOurWebsite() {
-      openURL('https://fbaw-my.com')
+      openURL('http://www.google.com')
     },
     emailUs() {
-      window.location.href = 'mailto:einsteinyap2014@gmail.com?subject=Awesome Todo Feedback'
+      window.location.href = 'mailto:hello@awesometodo.com?subject=Awesome Todo Feedback'
     }
   }
 }

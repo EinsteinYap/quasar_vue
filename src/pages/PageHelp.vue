@@ -9,7 +9,7 @@
     />
 
     <h5>How to use Awesome Todo</h5>
-    <p>Want to know how to actually having own apps but unable to build? Just drop us an email or call us +6017 273 9455</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi cumque, voluptate eius inventore hic aspernatur. Suscipit blanditiis iusto eveniet vitae temporibus debitis omnis voluptatibus eos aliquid, magnam quae, animi tempora.</p>
   </q-page>
 </template>
 

@@ -2,9 +2,9 @@
 
 A Quasar Framework app
 
-## please Use NVM change to v 12.20.0 for this app run correctly
+## please Use NVM change to v 10.23.1 for this app run correctly
 
-nvm use v12.20.0
+nvm use v10.23.1
 
 ## Install the dependencies
 

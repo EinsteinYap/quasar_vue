@@ -1,6 +1,7 @@
 import firebase from "firebase/app"
 
 import "firebase/auth"
+import "firebase/database"
 
 var firebaseConfig = {
   // YOUR CONFIG HERE
@@ -15,5 +16,6 @@ var firebaseConfig = {
 
 let firebaseApp = firebase.initializeApp(firebaseConfig)
 let firebaseAuth = firebaseApp.auth()
+let firebaseDb = firebaseApp.database()
 
-export { firebaseAuth }
+export { firebaseAuth,firebaseDb }

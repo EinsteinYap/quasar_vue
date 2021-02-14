@@ -24,7 +24,8 @@ const state = {
 		// }
 	},
 	search: '',
-	sort: 'name'
+	sort: 'name',
+	tasksDownloaded: false
 }
 
 const mutations = {
@@ -37,11 +38,17 @@ const mutations = {
 	addTask(state, payload) {
 		Vue.set(state.tasks, payload.id, payload.task)
 	},
+	clearTasks(state) {
+		state.tasks = {}
+	},
 	setSearch(state, value) {
 		state.search = value
 	},	
 	setSort(state, value) {
 		state.sort = value
+	},
+	setTasksDownloaded(state, value) {
+		state.tasksDownloaded = value
 	}
 }
 
@@ -70,6 +77,13 @@ const actions = {
 	fbReadData({ commit }) {
 		let userId = firebaseAuth.currentUser.uid
 		let userTasks = firebaseDb.ref('tasks/' + userId)
+
+		// initial check for data
+		userTasks.once('value', snapshot => {
+			commit('setTasksDownloaded', true)
+		}, error => {
+			console.log('error.message: ', error.message)
+		})
 
 		// child added
 		userTasks.on('child_added', snapshot => {
